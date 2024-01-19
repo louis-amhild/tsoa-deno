@@ -1,3 +1,5 @@
 node_modules
 dist
 .eslintrc.js
+denoify.config.js
+denoify.replacer.mjs

@@ -20,5 +20,7 @@
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "strict": true
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.deno.ts"]
 }

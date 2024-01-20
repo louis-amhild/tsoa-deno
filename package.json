@@ -30,6 +30,7 @@
   },
   "scripts": {
     "build": "lerna run build --stream",
+    "build:deno": "lerna run build:deno --stream",
     "deploy": "yarn bump && lerna publish from-git",
     "bump": "lerna version patch -m \"Release v%s\" --force-publish",
     "clean": "lerna run clean --stream",

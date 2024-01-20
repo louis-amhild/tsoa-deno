@@ -21,7 +21,8 @@
     "koa"
   ],
   "scripts": {
-    "build": "yarn tsc",
+    "build": "yarn tsc && yarn build:deno",
+    "build:deno": "cross-env GITHUB_TOKEN='' denoify",
     "tsc": "tsc",
     "watch": "tsc -w"
   },
@@ -39,6 +40,7 @@
   "devDependencies": {
     "@types/node": "^18.0.0",
     "@types/validator": "^13.11.7",
+    "denoify": "^1.6.9",
     "typescript": "^5.3.3"
   },
   "repository": {

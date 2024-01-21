@@ -60,7 +60,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
     - run: |
         npm run build:deno
-        npx -y -p denoify remove_deno_dist_from_gitignore
+        npm run build:remove-deno-ignore
       env:
         DRY_RUN: "0"
     - run: |

@@ -32,6 +32,7 @@
   "scripts": {
     "build": "lerna run build --stream",
     "build:deno": "denoify -p packages/runtime",
+    "build:remove-deno-ignore": "denoify -p packages/runtime remove_deno_dist_from_gitignore",
     "deploy": "yarn bump && lerna publish from-git",
     "bump": "lerna version patch -m \"Release v%s\" --force-publish",
     "clean": "lerna run clean --stream",

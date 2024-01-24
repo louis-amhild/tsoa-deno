@@ -1,7 +1,7 @@
 {
   "name": "@tsoa/runtime",
-  "description": "Build swagger-compliant REST APIs using TypeScript and Node",
-  "version": "6.0.0",
+  "description": "Build swagger-compliant REST APIs using TypeScript and Deno",
+  "version": "6.0.0-rc.6",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "files": [

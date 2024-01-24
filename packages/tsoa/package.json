@@ -28,8 +28,8 @@
   "author": "Luke Autry <lukeautry@gmail.com> (http://www.lukeautry.com)",
   "license": "MIT",
   "dependencies": {
-    "@tsoa/cli": "^6.1.0",
-    "@tsoa/runtime": "^6.1.0"
+    "@tsoa/cli": "^6.1.0-rc.1",
+    "@tsoa/runtime": "^6.1.0-rc.1"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

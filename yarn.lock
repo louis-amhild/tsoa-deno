@@ -1229,15 +1229,6 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.4.tgz#0b92dcc0cc1c81f6f306a381f28e31b1a56536e9"
   integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
 
-"@tsoa/runtime@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@tsoa/runtime/-/runtime-6.0.0.tgz#e8e6f5ae7704f7d6913da40ff8cbbe6661d60a6f"
-  integrity sha512-n0LYcjII313kDn3M4bZdAjU+sX7595sIEA3bw4pvxWRrkandyDdDFNrfQL8nZ3Pw6dkTmK7brZi0YBBDhe0Rzw==
-  dependencies:
-    "@types/multer" "^1.4.11"
-    reflect-metadata "^0.2.1"
-    validator "^13.11.0"
-
 "@tufjs/canonical-json@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@tufjs/canonical-json/-/canonical-json-1.0.0.tgz#eade9fd1f537993bc1f0949f3aea276ecc4fab31"

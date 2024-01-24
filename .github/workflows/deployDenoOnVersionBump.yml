@@ -109,6 +109,7 @@ jobs:
         git config --global user.name "actions"
         git config --global user.email actions@github.com
         sed -i '/packages\/runtime\/deno_dist/d' .gitignore
+        cp packages/runtime/README.deno.md packages/runtime/deno_dist/README.md
         git add -A
         git commit -am "Add TSOA runtime Deno distribution files"
         git push origin tmp_branch

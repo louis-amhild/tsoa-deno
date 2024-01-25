@@ -50,12 +50,11 @@ export interface Config {
    */
   multerOpts?: MulterOpts;
 
-
   /*
    * OpenAPI number type to be used for TypeScript's 'number', when there isn't a type annotation
    * @default double
    */
-  defaultNumberType?: 'double' | 'float' | 'integer' | 'long'
+  defaultNumberType?: 'double' | 'float' | 'integer' | 'long';
 }
 
 /**
@@ -235,7 +234,7 @@ export interface RoutesConfig {
   /**
    * Middleware provider.
    */
-  middleware?: 'express' | 'hapi' | 'koa';
+  middleware?: 'express' | 'hapi' | 'koa' | 'hono';
 
   /**
    * Override the Middleware template

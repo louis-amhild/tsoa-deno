@@ -22,7 +22,9 @@ export class DefaultRouteGenerator extends AbstractRouteGenerator<ExtendedRoutes
       case 'koa':
         this.template = path.join(__dirname, '..', 'routeGeneration/templates/koa.hbs');
         break;
-      case 'express':
+      case 'hono':
+        this.template = path.join(__dirname, '..', 'routeGeneration/templates/hono.hbs');
+        break;
       default:
         this.template = path.join(__dirname, '..', 'routeGeneration/templates/express.hbs');
     }
@@ -66,6 +68,11 @@ export class DefaultRouteGenerator extends AbstractRouteGenerator<ExtendedRoutes
     handlebars.registerHelper('json', (context: any) => {
       return JSON.stringify(context);
     });
+
+    handlebars.registerHelper('eq', (arg1: any, arg2: any) => {
+      return arg1 === arg2;
+    });
+
     const additionalPropsHelper = (additionalProperties: TsoaRoute.RefObjectModelSchema['additionalProperties']) => {
       if (additionalProperties) {
         // Then the model for this type explicitly allows additional properties and thus we should assign that

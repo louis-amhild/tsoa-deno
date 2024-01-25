@@ -10,7 +10,8 @@
         "env": true
     },
     "include": [
-        "src/**/*deno.ts"
+        "src/**/*deno.ts",
+        "src/routeGeneration/templates/hono/*.ts"
     ],
     "unstable": ["sloppy-imports"]
 }

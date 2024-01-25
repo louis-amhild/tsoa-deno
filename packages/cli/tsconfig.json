@@ -20,7 +20,7 @@
     "esModuleInterop": true,
     "strict": true
   },
-  "exclude": ["src/routeGeneration/templates/**/*.hbs"],
+  "exclude": ["src/routeGeneration/templates/**/*.hbs", "src/routeGeneration/templates/hono/honoTemplateService.ts"],
   "include": ["src/**/*.ts"],
   "references": [{ "path": "../runtime" }]
 }

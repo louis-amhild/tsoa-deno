@@ -4,13 +4,15 @@
         "emitDecoratorMetadata": false,
         "lib": ["esnext", "dom"]
     },
+    "importMap": "./deno.import-map.json",
     "permissions": {
         "net": true,
         "read": true,
         "env": true
     },
     "include": [
-        "src/**/*deno.ts"
+        "src/**/*deno.ts",
+        "src/routeGeneration/templates/hono/*.ts"
     ],
     "unstable": ["sloppy-imports"]
 }

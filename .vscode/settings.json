@@ -12,11 +12,11 @@
   "deno.enablePaths": [
     "./deno-example",
     "./tests/fixtures/hono",
-    "./packages/cli/src/routeGeneration/templates/hono",
+    "./packages/runtime/src/routeGeneration/templates/hono",
     "./tests/integration/hono-server.test.ts"
   ],
-  "deno.importMap": "./tests/fixtures/hono/importMap.json",
-  "deno.config": "./tests/fixtures/hono/deno.json",
+  "deno.importMap": "./packages/runtime/deno.import-map.json",
+  "deno.config": "./packages/runtime/deno.json",
   "deno.testing.args": [
     "--allow-all",
     "--no-check",

@@ -1,15 +1,22 @@
 <div align="center">
   <a href="https://tsoa-community.github.io/docs/" target="blank">
-    <h1>tsoa</h1>
+    <h1>tsoa-deno</h1>
   </a>
-Pronounced so·uh
 
-OpenAPI-compliant REST APIs using TypeScript and Node
+OpenAPI-compliant REST APIs using TypeScript and Deno / Node
 
-![build status](https://github.com/lukeautry/tsoa/actions/workflows/runTestsOnPush.yml/badge.svg)
-[![npm version](https://img.shields.io/npm/v/tsoa/latest)](https://www.npmjs.com/package/tsoa)
+<span>[![build status](https://github.com/louis-amhild/tsoa-deno/actions/workflows/runTestsOnPush.yml/badge.svg?branch=master)](https://github.com/louis-amhild/tsoa-deno/actions/workflows/runTestsOnPush.yml)</span>
+<span>[![npm version](https://img.shields.io/npm/v/tsoa-deno/latest)](https://www.npmjs.com/package/tsoa-deno)</span>
+<span>[![build status](https://shield.deno.dev/x/tsoa_runtime)](https://deno.land/x/tsoa_runtime)</span>
 
 </div>
+
+## About
+This enhanced fork of TSOA extends the framework's capabilities to Deno, facilitating the development of RESTful applications. The primary motivation behind this adaptation is to harness TSOA's robust features within the great Supabase Edge Functions, however it should work with other Deno-based setups as well.
+
+To accomplish this, the fork introduces compatibility with the Hono framework through modifications to the TSOA CLI, along with a Deno-compliant version of the TSOA Runtime package. These enhancements ensure seamless integration and operation within the Deno ecosystem.
+
+For detailed Deno specific usage instructions and code examples, please visit the [tsoa-deno github](repository https://github.com/louis-amhild/tsoa-deno) repository. Additionally, refer to the TSOA documentation for standard TSOA setup and implementation instructions.
 
 ## Goal
 

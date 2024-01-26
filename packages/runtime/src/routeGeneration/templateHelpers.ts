@@ -3,7 +3,7 @@ import { assertNever } from '../utils/assertNever';
 import { AdditionalProps } from './additionalProps';
 import { TsoaRoute, isDefaultForAdditionalPropertiesAllowed } from './tsoa-route';
 import { Tsoa } from '../metadataGeneration/tsoa';
-import ValidatorKey = Tsoa.ValidatorKey;
+type ValidatorKey = Tsoa.ValidatorKey;
 
 // for backwards compatibility with custom templates
 export function ValidateParam(property: TsoaRoute.PropertySchema, value: any, generatedModels: TsoaRoute.Models, name = '', fieldErrors: FieldErrors, parent = '', swaggerConfig: AdditionalProps) {

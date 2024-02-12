@@ -155,7 +155,7 @@ export class ValidationService {
   }
 
   public validateInt(name: string, value: any, fieldErrors: FieldErrors, validators?: IntegerValidator, parent = '') {
-    if (!validator.isInt(String(value))) {
+    if (!validator.isInt(String(value), {})) {
       let message = `invalid integer number`;
       if (validators) {
         if (validators.isInt && validators.isInt.errorMsg) {
@@ -370,7 +370,7 @@ export class ValidationService {
       }
     }
     if (validators.pattern && validators.pattern.value) {
-      if (!validator.matches(String(stringValue), validators.pattern.value)) {
+      if (!validator.matches(String(stringValue), validators.pattern.value, '')) {
         fieldErrors[parent + name] = {
           message: validators.pattern.errorMsg || `Not match in '${validators.pattern.value}'`,
           value,

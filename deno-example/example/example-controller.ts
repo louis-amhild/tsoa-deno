@@ -1,4 +1,4 @@
-import { Route, Body, Post, Get, Controller } from "@tsoa_runtime";
+import { Route, Body, Post, Get, Controller } from "@tsoa/runtime";
 
 interface EmbeddingRequest {
     input?: string

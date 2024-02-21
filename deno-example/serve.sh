@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 tsoa routes
-deno run --import-map=import_map.json --config tsconfig.json example/index.ts
+deno run --allow-net --import-map=import_map.json --config tsconfig.json example/index.ts

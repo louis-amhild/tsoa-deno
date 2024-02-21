@@ -10,6 +10,6 @@
     },
     "routes": {
         "routesDir": "./_shared",
-        "middlewareTemplate": "../packages/cli/src/routeGeneration/templates/hono.hbs"
+        "middlewareTemplate": "../packages/cli/src/routeGeneration/templates/hono/hono.hbs"
     }
 }

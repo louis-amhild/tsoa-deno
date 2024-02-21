@@ -10,3 +10,5 @@ yarn-error.log
 tsconfig.tsbuildinfo
 packages/runtime/deno_dist/
 deno-example/deno.lock
+deno-example/_shared/swagger.json
+deno-example/_shared/routes.ts

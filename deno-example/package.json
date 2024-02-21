@@ -1,0 +1,15 @@
+{
+    "name": "tsoa-deno-example",
+    "private": true,
+    "description": "Example of building swagger-compliant REST APIs using TypeScript and Deno",
+    "version": "0.1.0",
+    "scripts": {
+        "build": "tsoa routes",
+        "serve": "deno run --watch --allow-net --import-map=import_map.json --config tsconfig.json example/index.ts",
+        "watch": "concurrently --names \"TSOA,DENO\" \"nodemon -x tsoa spec-and-routes -e ts,js,mjs,cjs,json --ignore **/routes.ts --ignore **/swagger.json\" \"npm run serve\""
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.0",
+        "concurrently": "^8.2.2"
+    }
+}

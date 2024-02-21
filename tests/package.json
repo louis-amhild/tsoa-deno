@@ -20,6 +20,7 @@
   "scripts": {
     "clean": "rimraf --glob dist fixtures/*/routes.ts fixtures/*/customRoutes.ts fixtures/*/custom-route-generator/routes/*",
     "prepare-test": "cross-env NODE_ENV=tsoa_test ts-node --require=tsconfig-paths/register ./prepare.ts",
+    "prepare-test:hono": "cross-env NODE_ENV=tsoa_test ts-node --require=tsconfig-paths/register ./prepare-hono.ts",
     "pretest": "yarn clean && yarn prepare-test && yarn typecheck",
     "test": "cross-env NODE_ENV=tsoa_test mocha \"**/*.spec.ts\" && yarn test:deno",
     "test:deno": "deno test --allow-net --allow-read --allow-env --quiet --import-map=fixtures/hono/importMap.json --config fixtures/hono/deno.json integration/*.test.ts",

@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": false,
+        "lib": ["esnext", "dom"]
+    },
+    "permissions": {
+        "net": true,
+        "read": true,
+        "env": true
+    },
+    "include": [
+        "./*.ts",
+        "../../integration/*.test.ts"
+    ],
+    "unstable": ["sloppy-imports"]
+}

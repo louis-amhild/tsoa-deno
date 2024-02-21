@@ -28,6 +28,13 @@ export class SecurityTestController {
     return Promise.resolve(request.user);
   }
 
+  @Response<ErrorResponseModel>('default', 'Unexpected error')
+  @Security('api_key')
+  @Get('Hono')
+  public async GetWithApiForHono(@Request() request: RequestWithUser): Promise<UserResponseModel> {
+    return Promise.resolve(request.user);
+  }
+
   @Response<ErrorResponseModel>('404', 'Not Found')
   @Security('tsoa_auth', ['write:pets', 'read:pets'])
   @Get('Oauth')

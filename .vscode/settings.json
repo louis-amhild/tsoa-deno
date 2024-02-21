@@ -13,7 +13,8 @@
     "./deno-example",
     "./tests/fixtures/hono",
     "./packages/cli/src/routeGeneration/templates/hono",
-    "./tests/integration/hono-server.test.ts"
+    "./tests/integration/hono-server.test.ts",
+    "./tests/integration/hono-server-no-additional-allowed.test.ts"
   ],
   "deno.importMap": "./tests/fixtures/hono/importMap.json",
   "deno.config": "./tests/fixtures/hono/deno.json",

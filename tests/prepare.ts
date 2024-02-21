@@ -139,6 +139,16 @@ const log = async <T>(label: string, fn: () => Promise<T>) => {
         routesDir: './fixtures/hapi',
       }),
     ),
+    log('Hono Route Generation', () =>
+      generateRoutes({
+        noImplicitAdditionalProperties: 'silently-remove-extras',
+        authenticationModule: './fixtures/hono/authentication.ts',
+        basePath: '/v1',
+        entryFile: './fixtures/hono/server.ts',
+        middleware: 'hono',
+        routesDir: './fixtures/hono',
+      }),
+    ),
     log('Custom Route Generation', () =>
       generateRoutes(
         {

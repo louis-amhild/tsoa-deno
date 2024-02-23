@@ -27,13 +27,11 @@ export class TestController extends Controller {
   }
 
   @Get('customStatusCode')
-  public async customNomalStatusCode(): Promise<TestModel> {
-    const service = new ModelService();
-
-    return new Promise<TestModel>(resolve => {
+  public async customNomalStatusCode(): Promise<void> {
+    return new Promise<void>(resolve => {
       setTimeout(() => {
         this.setStatus(205);
-        resolve(service.getModel());
+        resolve();
       }, 1000);
     });
   }

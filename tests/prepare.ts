@@ -139,6 +139,27 @@ const log = async <T>(label: string, fn: () => Promise<T>) => {
         routesDir: './fixtures/hapi',
       }),
     ),
+    log('Hono Route Generation', () =>
+      generateRoutes({
+        noImplicitAdditionalProperties: 'silently-remove-extras',
+        authenticationModule: './fixtures/hono/authentication.ts',
+        basePath: '/v1',
+        entryFile: './fixtures/hono/server.ts',
+        middleware: 'hono',
+        routesDir: './fixtures/hono',
+      }),
+    ),
+    log('Hono Route Generation (but noImplicitAdditionalProperties is set to "throw-on-extras")', () =>
+      generateRoutes({
+        noImplicitAdditionalProperties: 'throw-on-extras',
+        authenticationModule: './fixtures/hono/authentication.ts',
+        basePath: '/v1',
+        entryFile: './fixtures/hono/serverNoAdditional.ts',
+        middleware: 'hono',
+        routesDir: './fixtures/hono',
+        routesFileName: 'routesNoAdditional.ts',
+      }),
+    ),
     log('Custom Route Generation', () =>
       generateRoutes(
         {

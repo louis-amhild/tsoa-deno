@@ -20,7 +20,7 @@
     }
   },
   "references": [{ "path": "../packages/runtime" }, { "path": "../packages/cli" }],
-  "exclude": ["esm", "fixtures/**/routes.ts"],
+  "exclude": ["esm", "fixtures/**/routes.ts", "fixtures/hono", "integration/*.test.ts", "fixtures/controllers/middlewaresHonoController.ts"],
   "ts-node": {
     "transpileOnly": true
   }

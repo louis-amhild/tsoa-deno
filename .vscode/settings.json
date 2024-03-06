@@ -13,10 +13,12 @@
     "./deno-example",
     "./tests/fixtures/hono",
     "./packages/runtime/src/routeGeneration/templates/hono",
-    "./tests/integration/hono-server.test.ts"
+    "./tests/integration/hono-server.test.ts",
+    "./tests/integration/hono-server-no-additional-allowed.test.ts",
+    "./tests/fixtures/controllers/middlewaresHonoController.ts"
   ],
-  "deno.importMap": "./packages/runtime/deno.import-map.json",
-  "deno.config": "./packages/runtime/deno.json",
+  "deno.importMap": "./tests/deno.import-map.json",
+  "deno.config": "./tests/deno.json",
   "deno.testing.args": [
     "--allow-all",
     "--no-check",
@@ -29,7 +31,7 @@
     "--allow-net",
     "--allow-env",
     "--allow-read",
-    "--config=./tests/fixtures/hono/deno.json"
+    "--config=./tests/deno.json"
   ],
   "deno.unstable": false
 }

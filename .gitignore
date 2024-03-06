@@ -10,3 +10,4 @@ yarn-error.log
 tsconfig.tsbuildinfo
 .typedoc
 packages/runtime/deno_dist/
+tests/fixtures/hono/routesNoAdditional.ts

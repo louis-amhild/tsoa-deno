@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": false,
+        "lib": ["esnext", "dom"]
+    },
+    "permissions": {
+        "net": true,
+        "read": true,
+        "env": true
+    },
+    "importMap": "./deno.import-map.json",
+    "include": [
+        "fixtures/hono/*.ts",
+        "integration/*.test.ts",
+        "fixtures/controllers/middlewaresHonoController.ts"
+    ],
+    "unstable": ["sloppy-imports"]
+}

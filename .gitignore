@@ -9,3 +9,4 @@ customRoutes.ts
 yarn-error.log
 tsconfig.tsbuildinfo
 packages/runtime/deno_dist/
+tests/fixtures/hono/routesNoAdditional.ts

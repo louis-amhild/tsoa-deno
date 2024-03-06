@@ -19,6 +19,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: yarn
 
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Check Deno version
+        run: deno --version
+
       - name: Install Yarn
         run: npm install -g yarn
 
@@ -45,6 +52,9 @@ jobs:
 
       - name: Build
         run: yarn run build
+
+      - name: Build Deno runtime
+        run: yarn run build:deno
 
       - name: Lint
         run: yarn run lint

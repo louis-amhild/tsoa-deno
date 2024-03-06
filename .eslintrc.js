@@ -7,7 +7,7 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ['./packages/**/tsconfig.json', './packages/**/deno.json', './tests/tsconfig.json', './tests/esm/tsconfig.json'],
+    project: ['./packages/**/tsconfig.json', './packages/**/deno.json', './tests/tsconfig.json', './tests/esm/tsconfig.json', './tests/deno.json'],
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
@@ -68,6 +68,13 @@ module.exports = {
         '@typescript-eslint/no-floating-promises': 'off',
         // Crashes also fail the test
         'no-unsafe-optional-chaining': 'off',
+      },
+    },
+    {
+      "files": ["tests/fixtures/hono/*.ts", "tests/integration/*.test.ts"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "tests/deno.json"
       },
     },
   ],

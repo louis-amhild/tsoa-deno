@@ -77,20 +77,22 @@ export class HonoTemplateService extends TemplateService<HonoApiHandlerParameter
 
   async apiHandler(params: HonoApiHandlerParameters): Promise<any> {
     const { methodName, controller, context, validatedArgs, successStatus } = params;
-    const promise = this.buildPromise(methodName, controller, validatedArgs);
+    const promise: unknown | Promise<unknown> = this.buildPromise(methodName, controller, validatedArgs);
 
-    let statusCode = successStatus;
-    let headers: ReturnType<Controller['getHeaders']> = {};
-    const data = await promise.catch((error: any) => {
-      throw new HTTPException(error?.status || 500, { message: error?.message || "Unknown error" });
-    });
+    try {
+      let statusCode = successStatus;
+      let headers: ReturnType<Controller['getHeaders']> = {};
+      const data = await promise;
 
-    if (this.isController(controller)) {
-      headers = controller.getHeaders();
-      statusCode = controller.getStatus() || statusCode;
+      if (this.isController(controller)) {
+        headers = controller.getHeaders();
+        statusCode = controller.getStatus() || statusCode;
+      }
+      return this.returnHandler({ context, headers: this.removeUndefinedHeaders(headers), statusCode, data });
     }
-
-    return this.returnHandler({ context, headers: this.removeUndefinedHeaders(headers), statusCode, data });
+    catch(error) {
+      throw new HTTPException(error?.status || 500, { message: error?.message || "Unknown error" });
+    }
   }
 
   /**

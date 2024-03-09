@@ -8,7 +8,6 @@ customRoutes.ts
 *.swp
 yarn-error.log
 tsconfig.tsbuildinfo
-packages/runtime/deno_dist/
 tests/fixtures/hono/routesNoAdditional.ts
 deno-example/_shared/swagger.json
 deno-example/_shared/routes.ts

@@ -7,7 +7,7 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ['./packages/**/tsconfig.json', './packages/**/deno.json', './tests/tsconfig.json', './tests/esm/tsconfig.json', './tests/deno.json'],
+    project: ['./packages/**/tsconfig.json', './packages/**/deno.json', './tests/tsconfig.json', './tests/esm/tsconfig.json', './tests/deno.json', './deno-example/deno.json'],
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
@@ -75,6 +75,13 @@ module.exports = {
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "project": "tests/deno.json"
+      },
+    },
+    {
+      "files": ["deno-example/*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "deno-example/deno.json"
       },
     },
   ],

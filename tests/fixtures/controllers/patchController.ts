@@ -1,4 +1,4 @@
-import { Body, Patch, Route } from '@tsoa/runtime';
+import { Body, Patch, Route } from '@tsoa-deno/runtime';
 import { ModelService } from '../services/modelService';
 import { TestModel } from '../testModel';
 

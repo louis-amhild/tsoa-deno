@@ -3,7 +3,7 @@ import { GenerateMetadataError } from './exceptions';
 import { MetadataGenerator } from './metadataGenerator';
 import { MethodGenerator } from './methodGenerator';
 import { TypeResolver } from './typeResolver';
-import { Tsoa } from '@tsoa/runtime';
+import { Tsoa } from '@tsoa-deno/runtime';
 import { getHeaderType } from '../utils/headerTypeHelpers';
 import { isMethodDeclaration, type ClassDeclaration, type CallExpression, type StringLiteral } from 'typescript';
 

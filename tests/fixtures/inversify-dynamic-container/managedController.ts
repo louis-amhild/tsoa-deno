@@ -1,5 +1,5 @@
 import { inject, injectable } from 'inversify';
-import { Get, Route, Security } from '@tsoa/runtime';
+import { Get, Route, Security } from '@tsoa-deno/runtime';
 import { ManagedService } from './managedService';
 
 @injectable()

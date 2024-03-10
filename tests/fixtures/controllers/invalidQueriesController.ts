@@ -1,4 +1,4 @@
-import { Get, Queries, Route } from '@tsoa/runtime';
+import { Get, Queries, Route } from '@tsoa-deno/runtime';
 import { ModelService } from '../services/modelService';
 import { TestModel } from '../testModel';
 

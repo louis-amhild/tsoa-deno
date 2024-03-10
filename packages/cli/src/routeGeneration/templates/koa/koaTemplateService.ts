@@ -1,5 +1,5 @@
 import type { Context, Next } from 'koa';
-import { Controller, FieldErrors, TsoaRoute, ValidateError } from '@tsoa/runtime';
+import { Controller, FieldErrors, TsoaRoute, ValidateError } from '@tsoa-deno/runtime';
 
 import { TemplateService } from '../templateService';
 

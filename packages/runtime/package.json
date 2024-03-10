@@ -1,5 +1,5 @@
 {
-  "name": "@tsoa/runtime",
+  "name": "@tsoa-deno/runtime",
   "description": "Build swagger-compliant REST APIs using TypeScript and Node / Deno",
   "version": "6.1.0",
   "main": "./dist/index.js",

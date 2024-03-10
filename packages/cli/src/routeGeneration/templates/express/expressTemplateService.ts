@@ -1,5 +1,5 @@
 import { Request as ExRequest, Response as ExResponse, NextFunction as ExNext } from 'express';
-import { Controller, FieldErrors, TsoaRoute, ValidateError } from '@tsoa/runtime';
+import { Controller, FieldErrors, TsoaRoute, ValidateError } from '@tsoa-deno/runtime';
 
 import { TemplateService } from '../templateService';
 

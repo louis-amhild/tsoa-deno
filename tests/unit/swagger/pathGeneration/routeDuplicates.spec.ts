@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { MetadataGenerator } from '@tsoa/cli/metadataGeneration/metadataGenerator';
+import { MetadataGenerator } from '@tsoa-deno/cli/metadataGeneration/metadataGenerator';
 import { spy } from 'sinon';
 
 describe('Overlapping routes', () => {

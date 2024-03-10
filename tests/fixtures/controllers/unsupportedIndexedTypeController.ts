@@ -1,4 +1,4 @@
-import { Get, Route } from '@tsoa/runtime';
+import { Get, Route } from '@tsoa-deno/runtime';
 import { ForeignIndexedValue } from '../testModel';
 
 @Route('UnsupportedIndexedType')

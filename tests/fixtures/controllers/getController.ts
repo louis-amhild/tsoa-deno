@@ -1,6 +1,6 @@
 ///<reference path="../tsoaTestModule.d.ts" />
 import { Readable } from 'stream';
-import { Controller, Example, Get, OperationId, Query, Request, Response, Route, SuccessResponse, Tags, Res, TsoaResponse, Queries } from '@tsoa/runtime';
+import { Controller, Example, Get, OperationId, Query, Request, Response, Route, SuccessResponse, Tags, Res, TsoaResponse, Queries } from '@tsoa-deno/runtime';
 import '../duplicateTestModel';
 import {
   GenericModel,

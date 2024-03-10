@@ -1,6 +1,6 @@
 import { Request as HRequest, ResponseToolkit as HResponse } from '@hapi/hapi';
 import { type Payload } from '@hapi/boom';
-import { Controller, FieldErrors, TsoaRoute, ValidateError } from '@tsoa/runtime';
+import { Controller, FieldErrors, TsoaRoute, ValidateError } from '@tsoa-deno/runtime';
 
 import { TemplateService } from '../templateService';
 

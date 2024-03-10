@@ -1,6 +1,6 @@
 import { merge as mergeAnything } from 'merge-anything'
 import { merge as deepMerge } from 'ts-deepmerge';
-import { Tsoa, assertNever, Swagger } from '@tsoa/runtime';
+import { Tsoa, assertNever, Swagger } from '@tsoa-deno/runtime';
 
 import { SpecGenerator } from './specGenerator';
 import { ExtendedSpecConfig } from '../cli';

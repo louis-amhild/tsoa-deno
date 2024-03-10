@@ -1,6 +1,6 @@
 {
   "name": "tsoa-monorepo",
-  "description": "Build swagger-compliant REST APIs using TypeScript and Node",
+  "description": "Build swagger-compliant REST APIs using TypeScript and Node / Deno",
   "private": true,
   "keywords": [
     "typescript",

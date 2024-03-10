@@ -1,7 +1,7 @@
-import { ExtendedSpecConfig } from '@tsoa/cli/cli';
-import { MetadataGenerator } from '@tsoa/cli/metadataGeneration/metadataGenerator';
-import { SpecGenerator3 } from '@tsoa/cli/swagger/specGenerator3';
-import { Swagger, Tsoa } from '@tsoa/runtime';
+import { ExtendedSpecConfig } from '@tsoa-deno/cli/cli';
+import { MetadataGenerator } from '@tsoa-deno/cli/metadataGeneration/metadataGenerator';
+import { SpecGenerator3 } from '@tsoa-deno/cli/swagger/specGenerator3';
+import { Swagger, Tsoa } from '@tsoa-deno/runtime';
 import { expect } from 'chai';
 import 'mocha';
 import * as os from 'os';

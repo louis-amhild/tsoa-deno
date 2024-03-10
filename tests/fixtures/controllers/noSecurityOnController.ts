@@ -1,4 +1,4 @@
-import { Get, Request, Response, Route, Security, NoSecurity } from '@tsoa/runtime';
+import { Get, Request, Response, Route, Security, NoSecurity } from '@tsoa-deno/runtime';
 import { ErrorResponseModel, UserResponseModel } from '../testModel';
 
 interface RequestWithUser {

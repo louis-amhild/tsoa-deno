@@ -1,5 +1,5 @@
 {
-  "name": "@tsoa/cli",
+  "name": "@tsoa-deno/cli",
   "description": "Build swagger-compliant REST APIs using TypeScript and Node / Deno",
   "version": "6.1.5",
   "main": "./dist/index.js",
@@ -32,7 +32,7 @@
   "author": "Luke Autry <lukeautry@gmail.com> (http://www.lukeautry.com)",
   "license": "MIT",
   "dependencies": {
-    "@tsoa/runtime": "^6.1.5",
+    "@tsoa-deno/runtime": "^6.1.5",
     "@types/multer": "^1.4.11",
     "fs-extra": "^11.2.0",
     "glob": "^10.3.10",
@@ -56,10 +56,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukeautry/tsoa.git"
+    "url": "https://github.com/louis-amhild/tsoa-deno.git"
   },
   "bin": {
-    "tsoa": "dist/cli.js"
+    "tsoa-deno": "dist/cli.js"
   },
   "engines": {
     "yarn": ">=1.9.4",

@@ -5,5 +5,5 @@ export { HapiTemplateService } from './routeGeneration/templates/hapi/hapiTempla
 export { KoaTemplateService } from './routeGeneration/templates/koa/koaTemplateService';
 export { AbstractRouteGenerator } from './routeGeneration/routeGenerator';
 export { DefaultRouteGenerator } from './routeGeneration/defaultRouteGenerator';
-export { Config } from '@tsoa/runtime';
+export { Config } from '@tsoa-deno/runtime';
 export * from './cli';

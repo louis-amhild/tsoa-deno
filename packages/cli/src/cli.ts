@@ -2,7 +2,7 @@
 import YAML from 'yamljs';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
-import { Config, RoutesConfig, SpecConfig, Tsoa } from '@tsoa/runtime';
+import { Config, RoutesConfig, SpecConfig, Tsoa } from '@tsoa-deno/runtime';
 import { MetadataGenerator } from './metadataGeneration/metadataGenerator';
 import { generateRoutes } from './module/generate-routes';
 import { generateSpec } from './module/generate-spec';
@@ -29,7 +29,7 @@ const getPackageJsonValue = async (key: string, defaultValue = ''): Promise<stri
 
 const nameDefault = () => getPackageJsonValue('name', 'TSOA');
 const versionDefault = () => getPackageJsonValue('version', '1.0.0');
-const descriptionDefault = () => getPackageJsonValue('description', 'Build swagger-compliant REST APIs using TypeScript and Node');
+const descriptionDefault = () => getPackageJsonValue('description', 'Build swagger-compliant REST APIs using TypeScript and Node / Deno');
 const licenseDefault = () => getPackageJsonValue('license', 'MIT');
 const determineNoImplicitAdditionalSetting = (noImplicitAdditionalProperties: Config['noImplicitAdditionalProperties']): Exclude<Config['noImplicitAdditionalProperties'], undefined> => {
   if (noImplicitAdditionalProperties === 'silently-remove-extras' || noImplicitAdditionalProperties === 'throw-on-extras' || noImplicitAdditionalProperties === 'ignore') {

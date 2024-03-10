@@ -1,10 +1,10 @@
 import 'mocha';
-import { MetadataGenerator } from '@tsoa/cli/metadataGeneration/metadataGenerator';
-import { SpecGenerator2 } from '@tsoa/cli/swagger/specGenerator2';
+import { MetadataGenerator } from '@tsoa-deno/cli/metadataGeneration/metadataGenerator';
+import { SpecGenerator2 } from '@tsoa-deno/cli/swagger/specGenerator2';
 import { getDefaultExtendedOptions } from '../../../fixtures/defaultOptions';
 import { VerifyPathableParameter } from '../../utilities/verifyParameter';
 import { VerifyPath } from '../../utilities/verifyPath';
-import { Swagger } from '@tsoa/runtime';
+import { Swagger } from '@tsoa-deno/runtime';
 
 describe('DELETE route generation', () => {
   const metadata = new MetadataGenerator('./fixtures/controllers/deleteController.ts').Generate();

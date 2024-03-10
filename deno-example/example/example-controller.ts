@@ -1,4 +1,4 @@
-import { Route, Body, Post, Get, Controller } from "@tsoa_runtime";
+import { Route, Body, Post, Get, Controller } from "@tsoa/runtime";
 
 interface EmbeddingRequest {
     input?: string
@@ -13,41 +13,29 @@ interface EmbeddingResponse {
  */
 @Route('/example')
 export class TsoaController extends Controller {
-    /**
-     * A simple TSOA test route getting an embedding
-     */
-    // @Post('embeddings')
-    // // @Security("user_auth", ["Admin", "SuperAdmin"])
-    // public async getEmbeddings(@Body() body: EmbeddingRequest): Promise<EmbeddingResponse> {
-    //     console.log("Got input ", body.input);
-    //     const embedding: number[] = await getEmbeddings(body.input);
-    //     console.log("Hello from hello robot embedding controller")
-    //     return { embedding };
-    // }
+    @Get('')
+    public rootGet(): { message: string } {
+        return { message: "Hello from TSOA Deno Demo Controller" };
+    }
 
-     /**
-     * A event more 
-     */
-     @Post('test')
-     // @Security("user_auth", ["Admin", "SuperAdmin"])
-     public async test(@Body() body: EmbeddingRequest): Promise<EmbeddingResponse> {
-        const embedding = [1, 2, 3, 4, 5, 10]; 
-        return { embedding };
-     }
-
-     @Get('test')
-     // @Security("user_auth", ["Admin", "SuperAdmin"])
-     public async testGet(): Promise<EmbeddingResponse> {
+    @Get('test')
+    public testGet(): EmbeddingResponse {
         const embedding = [9, 9, 9];
         return { embedding };
-     }
+    }
 
-     @Post('tesx2')
-     // @Security("user_auth", ["Admin", "SuperAdmin"])
-     public async tesx2(@Body() body: { input2: string }): Promise<EmbeddingResponse> {
-        const embedding = [3, 4, 5, 6, 2]; 
+    @Post('test')
+    public test(@Body() body: EmbeddingRequest): EmbeddingResponse {
+        const embedding = [1, 2, 3, 4, 5, 10];
+        console.log("Input body ", body);
         return { embedding };
-     }
+    }
+
+    @Post('test2')
+    public test2(): EmbeddingResponse {
+        const embedding = [3, 4, 5, 6, 2];
+        return { embedding };
+    }
 }
 
 // To invoke (Supabase):

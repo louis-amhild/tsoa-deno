@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": false,
+        "lib": ["esnext", "dom"]
+    },
+    "importMap": "./deno.import-map.json",
+    "include": [
+        "./**/*.ts"
+    ]
+}

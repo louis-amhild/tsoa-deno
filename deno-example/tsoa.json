@@ -5,11 +5,11 @@
         "**/*-controller.ts"
     ],
     "spec": {
-        "outputDirectory": "api-specs",
+        "outputDirectory": "./_shared",
         "specVersion": 3    
     },
     "routes": {
         "routesDir": "./_shared",
-        "middlewareTemplate": "../packages/cli/src/routeGeneration/templates/hono.hbs"
+        "middleware": "hono"
     }
 }

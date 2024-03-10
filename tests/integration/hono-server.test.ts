@@ -9,7 +9,7 @@ import * as path from "https://deno.land/std/path/mod.ts";
 import { expect } from 'npm:chai';
 import { Buffer } from 'npm:buffer';
 
-import { File } from '@tsoa/runtime';
+import { File } from '@tsoa-deno/runtime';
 import { server } from './../fixtures/hono/server.ts';
 import { Gender, GenericModel, GenericRequest, Model, ParameterTestModel, TestClassModel, TestModel, ValidateMapStringToAny, ValidateMapStringToNumber, ValidateModel } from '../fixtures/testModel.ts';
 import { stateOf } from "../fixtures/controllers/middlewaresHonoController.ts";

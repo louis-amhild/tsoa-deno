@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
-import { validateSpecConfig, ExtendedSpecConfig } from '@tsoa/cli/cli';
-import { Config } from '@tsoa/runtime';
+import { validateSpecConfig, ExtendedSpecConfig } from '@tsoa-deno/cli/cli';
+import { Config } from '@tsoa-deno/runtime';
 import { getDefaultOptions } from '../../fixtures/defaultOptions';
 
 describe('Configuration', () => {

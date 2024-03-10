@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": false,
+        "lib": ["esnext", "dom"]
+    },
+    "importMap": "./import_map.json",
+    "include": [
+        "./**/*.ts"
+    ]
+}

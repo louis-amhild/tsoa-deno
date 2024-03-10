@@ -1,6 +1,6 @@
 {
   "name": "@tsoa/runtime",
-  "description": "Build swagger-compliant REST APIs using TypeScript and Node",
+  "description": "Build swagger-compliant REST APIs using TypeScript and Node / Deno",
   "version": "6.2.0",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -18,7 +18,9 @@
     "generation",
     "express",
     "hapi.js",
-    "koa"
+    "koa",
+    "hono",
+    "deno"
   ],
   "scripts": {
     "build": "yarn tsc && yarn build:deno",

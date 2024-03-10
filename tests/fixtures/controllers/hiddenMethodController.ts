@@ -1,4 +1,4 @@
-import { Controller, Get, Hidden, Route, Query } from '@tsoa/runtime';
+import { Controller, Get, Hidden, Route, Query } from '@tsoa-deno/runtime';
 import { TestModel } from '../../fixtures/testModel';
 import { ModelService } from '../services/modelService';
 

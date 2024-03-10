@@ -1,4 +1,4 @@
-import { Controller, Get, Route, Security } from '@tsoa/runtime';
+import { Controller, Get, Route, Security } from '@tsoa-deno/runtime';
 import type { TestModel } from '../testModel.js';
 
 @Security('tsoa_auth')

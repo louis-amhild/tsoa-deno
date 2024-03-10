@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 import * as fs from 'fs';
 import * as handlebars from 'handlebars';
-import { ExtendedRoutesConfig } from '@tsoa/cli/src/cli';
-import { Tsoa, TsoaRoute, assertNever } from '@tsoa/runtime';
-import { fsReadFile, fsWriteFile, fsExists, fsMkDir } from '@tsoa/cli/src/utils/fs';
-import { AbstractRouteGenerator } from '@tsoa/cli/src/routeGeneration/routeGenerator';
+import { ExtendedRoutesConfig } from '@tsoa-deno/cli/src/cli';
+import { Tsoa, TsoaRoute, assertNever } from '@tsoa-deno/runtime';
+import { fsReadFile, fsWriteFile, fsExists, fsMkDir } from '@tsoa-deno/cli/src/utils/fs';
+import { AbstractRouteGenerator } from '@tsoa-deno/cli/src/routeGeneration/routeGenerator';
 import path = require('path');
 
 export interface ServerlessRoutesConfig extends ExtendedRoutesConfig {

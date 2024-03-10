@@ -1,5 +1,5 @@
 {
-  "name": "@tsoa/runtime",
+  "name": "@tsoa-deno/runtime",
   "description": "Build swagger-compliant REST APIs using TypeScript and Node / Deno",
   "version": "6.2.0",
   "main": "./dist/index.js",
@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukeautry/tsoa.git"
+    "url": "https://github.com/louis-amhild/tsoa-deno.git"
   },
   "engines": {
     "yarn": ">=1.9.4",

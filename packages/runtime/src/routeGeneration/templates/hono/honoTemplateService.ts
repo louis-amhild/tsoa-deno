@@ -5,7 +5,7 @@ import { Readable } from 'https://deno.land/x/readable_stream@v3.6.0-deno.0.3.0/
 import { encode as bufferToBase64 } from "https://deno.land/std@0.64.0/encoding/base64.ts";
 import { HTTPException, Next, type Context as HonoContext } from '@hono';
 
-import { HttpStatusCodeLiteral, File as TsoaFile, FieldErrors, ValidateError, TsoaRoute, Controller, TemplateService } from '@tsoa/runtime';
+import { HttpStatusCodeLiteral, File as TsoaFile, FieldErrors, ValidateError, TsoaRoute, Controller, TemplateService } from '@tsoa-deno/runtime';
 
 /**
  * Create a Tsoa compatible Hono context type that contains any request data available for consumption synchronously.

@@ -1,5 +1,5 @@
-import {Route} from "@tsoa/runtime/decorators/route";
-import {Get} from "@tsoa/runtime/decorators/methods";
+import {Route} from "@tsoa-deno/runtime/decorators/route";
+import {Get} from "@tsoa-deno/runtime/decorators/methods";
 
 @Route('AnnotatedTypesTest')
 export class AnnotatedTypesController {

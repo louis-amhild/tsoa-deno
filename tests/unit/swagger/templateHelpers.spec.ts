@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import 'mocha';
-import { TsoaRoute, FieldErrors, ValidationService, AdditionalProps } from '@tsoa/runtime';
+import { TsoaRoute, FieldErrors, ValidationService, AdditionalProps } from '@tsoa-deno/runtime';
 import { TypeAliasDate, TypeAliasDateTime, TypeAliasModel1, TypeAliasModel2 } from 'fixtures/testModel';
 
 describe('ValidationService', () => {

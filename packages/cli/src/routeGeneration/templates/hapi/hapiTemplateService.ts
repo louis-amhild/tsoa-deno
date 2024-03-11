@@ -1,5 +1,5 @@
 import { Request as HRequest, ResponseToolkit as HResponse } from '@hapi/hapi';
-import { boomify, isBoom, type Payload } from '@hapi/boom';
+import { type Payload } from '@hapi/boom';
 import { Controller, FieldErrors, TsoaRoute, ValidateError } from '@tsoa/runtime';
 
 import { TemplateService } from '../templateService';
@@ -50,6 +50,8 @@ export class HapiTemplateService extends TemplateService<HapiApiHandlerParameter
       }
       return this.returnHandler({ h, headers, statusCode, data });
     } catch (error: any) {
+
+      const { boomify, isBoom } = await import('@hapi/boom');
       if (isBoom(error)) {
         throw error;
       }

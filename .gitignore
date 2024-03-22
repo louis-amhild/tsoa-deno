@@ -9,7 +9,6 @@ customRoutes.ts
 yarn-error.log
 tsconfig.tsbuildinfo
 .typedoc
-packages/runtime/deno_dist/
 tests/fixtures/hono/routesNoAdditional.ts
 deno-example/_shared/swagger.json
 deno-example/_shared/routes.ts

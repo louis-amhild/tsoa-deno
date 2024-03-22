@@ -102,7 +102,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
     - run: |
-        npm run build:deno
+        yarn build:deno
       env:
         DRY_RUN: "0"
     - run: |
@@ -113,7 +113,7 @@ jobs:
         git add -A
         git commit -am "Add TSOA runtime Deno distribution files"
         git push origin tmp_branch
-    - uses: softprops/action-gh-release@v1
+    - uses: softprops/action-gh-release@v2.0.4
       with:
         name: Release v${{ needs.check_if_version_upgraded.outputs.to_version }}
         tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}
@@ -123,5 +123,4 @@ jobs:
         prerelease: ${{ needs.check_if_version_upgraded.outputs.is_pre_release == 'true' }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-    - name: Remove tmp_branch
-      run: git push origin :tmp_branch
+

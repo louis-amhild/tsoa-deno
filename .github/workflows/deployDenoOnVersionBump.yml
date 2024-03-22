@@ -102,7 +102,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
     - run: |
-        npm run build:deno
+        yarn build:deno
       env:
         DRY_RUN: "0"
     - run: |
@@ -112,16 +112,17 @@ jobs:
         cp packages/runtime/README.deno.md packages/runtime/deno_dist/README.md
         git add -A
         git commit -am "Add TSOA runtime Deno distribution files"
+        COMMIT_HASH=$(git rev-parse HEAD)
+        echo "COMMIT_HASH=$COMMIT_HASH" >> $GITHUB_ENV
         git push origin tmp_branch
-    - uses: softprops/action-gh-release@v1
+    - uses: softprops/action-gh-release@v2.0.4
       with:
         name: Release v${{ needs.check_if_version_upgraded.outputs.to_version }}
-        tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}
-        target_commitish: tmp_branch
+        tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}.0
+        target_commitish: ${{ env.COMMIT_HASH }}
         generate_release_notes: false
         draft: false
         prerelease: ${{ needs.check_if_version_upgraded.outputs.is_pre_release == 'true' }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-    - name: Remove tmp_branch
-      run: git push origin :tmp_branch
+        COMMIT_HASH: ${{ env.COMMIT_HASH }}
